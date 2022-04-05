@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: calc(100vh -1px);
@@ -25,35 +26,35 @@ body {
   margin: 1.25rem;
 }
 
-.qr-card {
-  border-radius: 0.625rem;
+.qr-code-container {
+  border-radius: 0.875rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
   background-color: var(--white);
-  padding: 1.75rem;
-  margin-bottom: 0.65rem;
+  padding: 1.5rem 1.25rem;
+  margin-bottom: 1.5rem;
 }
 img {
   max-width: 100%;
 }
 
-.qr-card img {
-  border-radius: 0.625rem;
-  margin-bottom: 1.5rem;
+.qr-code-container img {
+  border-radius: 0.875rem;
+  margin-bottom: 1.25rem;
 }
 
-.qr-card h1 {
+.qr-code-container h2 {
   color: var(--dark-blue);
   text-align: center;
   margin-bottom: 0.75rem;
-  font-size: 17px;
+  padding-bottom: 0.5rem;
 }
 
-.qr-card p {
+.qr-code-container p {
   color: var(--grayish-blue);
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 15px;
-  font-weight: 400;
+  margin-top: 0.75rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
 .attribution {
@@ -65,7 +66,7 @@ img {
 }
 
 @media (min-width: 500px) {
-  .qr-card {
+  .qr-code-container {
     width: 400px;
   }
 }
